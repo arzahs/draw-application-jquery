@@ -36,7 +36,10 @@ ul li, #newColor {
 	border: 0;
 	box-shadow: 0 3px 0 0 #222;
 }
-
+h1{
+	text-align: center;
+	color:white;
+}
 ul li {
 	display: inline-block;
 	margin: 0 5px 10px;
