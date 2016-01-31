@@ -3,19 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Simple Drawing App on jQuery</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<canvas id="canvas" width="400" height="500"></canvas>
+<canvas id="canvas" width="500" height="400"></canvas>
 <div class="conrols">
   <ul>
-    <li class="red active"></li>
-    <li class="green"></li>
+    <li class="red activated"></li>
+    <li class="yellow"></li>
     <li class="blue"></li>
   </ul>
 </div>
-
+<button id="revealColorSelect">New Color</button>
+<div id="colorSelect">
+  <span id="newColor"></span>
+  <div class="sliders">
+    <p>
+      <label for="red">Red</label>
+      <input id="red" name="red" type="range" min=0 max=255 value=0>
+    </p>
+    <p>
+      <label for="green">Green</label>
+      <input id="green" name="green" type="range" min=0 max=255 value=0>
+    </p>
+    <p>
+      <label for="blue">Blue</label>
+      <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+    </p>
+  </div>
+  <div>
+  <button id="addNewColor">Add Color</button>
+  </div>
+</div>
+</div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/app.js" type="text/javascript" charset="utf-8"></script>	
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
